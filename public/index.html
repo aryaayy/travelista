@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travelista - Your Travel Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">🌍 Travelista</div>
+      <ul class="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#destinasi">Destinasi</a></li>
+        <li><a href="#akomodasi">Akomodasi</a></li>
+        <li><a href="#transportasi">Transportasi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Jelajahi Dunia Bersama Travelista</h1>
+      <p class="hero-subtitle">Temukan destinasi impian Anda dengan panduan AI Travel Agent terbaik</p>
+      <button class="cta-button" onclick="openChat()">💬 Tanyakan ke Vela</button>
+    </div>
+    <div class="hero-background">
+      <div class="mountain"></div>
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+    </div>
+  </section>
+
+  <!-- Destinasi Section -->
+  <section id="destinasi" class="section">
+    <div class="container">
+      <h2 class="section-title">🏔️ Destinasi Wisata Populer</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🏝️</div>
+          <h3>Bali</h3>
+          <p>Pantai eksotis, budaya lokal yang kaya, dan pemandangan sunset yang menakjubkan</p>
+          <a href="#" class="card-link">Pelajari Lebih Lanjut →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">⛰️</div>
+          <h3>Yogyakarta</h3>
+          <p>Borobudur, Prambanan, dan wisata budaya Jawa yang tak terlupakan</p>
+          <a href="#" class="card-link">Pelajari Lebih Lanjut →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌋</div>
+          <h3>Lombok</h3>
+          <p>Pantai Gili, gunung Rinjani, dan keindahan alam yang masih alami</p>
+          <a href="#" class="card-link">Pelajari Lebih Lanjut →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏞️</div>
+          <h3>Raja Ampat</h3>
+          <p>Snorkeling terbaik di dunia dan keanekaragaman laut yang menakjubkan</p>
+          <a href="#" class="card-link">Pelajari Lebih Lanjut →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌲</div>
+          <h3>Bukit Tinggi</h3>
+          <p>Dataran tinggi sejuk, alam yang indah, dan udara yang segar</p>
+          <a href="#" class="card-link">Pelajari Lebih Lanjut →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏖️</div>
+          <h3>Komodo</h3>
+          <p>Komodo dragon, snorkeling, dan petualangan di Nusa Tenggara Timur</p>
+          <a href="#" class="card-link">Pelajari Lebih Lanjut →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Akomodasi Section -->
+  <section id="akomodasi" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">🏨 Rekomendasi Akomodasi</h2>
+      <div class="cards-grid">
+        <div class="accommodation-card">
+          <div class="acc-type luxury">Mewah</div>
+          <h3>Resort Bintang 5</h3>
+          <p class="price">💰 $200 - $500/malam</p>
+          <ul class="amenities">
+            <li>✓ Kolam renang pribadi</li>
+            <li>✓ Spa dan wellness center</li>
+            <li>✓ Restoran fine dining</li>
+            <li>✓ Layanan concierge 24/7</li>
+          </ul>
+        </div>
+        <div class="accommodation-card">
+          <div class="acc-type comfort">Nyaman</div>
+          <h3>Hotel Berbintang 3-4</h3>
+          <p class="price">💰 $50 - $150/malam</p>
+          <ul class="amenities">
+            <li>✓ Fasilitas lengkap</li>
+            <li>✓ Lokasi strategis</li>
+            <li>✓ Restoran dan kafe</li>
+            <li>✓ Pusat bisnis</li>
+          </ul>
+        </div>
+        <div class="accommodation-card">
+          <div class="acc-type budget">Budget</div>
+          <h3>Hostel & Guesthouse</h3>
+          <p class="price">💰 $10 - $50/malam</p>
+          <ul class="amenities">
+            <li>✓ Harga terjangkau</li>
+            <li>✓ Komunitas traveler</li>
+            <li>✓ Breakfast included</li>
+            <li>✓ Lokasi backpacker</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transportasi Section -->
+  <section id="transportasi" class="section">
+    <div class="container">
+      <h2 class="section-title">🚗 Rekomendasi Transportasi</h2>
+      <div class="transport-grid">
+        <div class="transport-card">
+          <div class="transport-icon">✈️</div>
+          <h3>Pesawat Udara</h3>
+          <p>Cara tercepat untuk menjangkau destinasi jauh dengan nyaman dan aman</p>
+          <div class="transport-details">
+            <span>⏱️ 1-5 jam</span>
+            <span>💰 Rp 500K - 3M</span>
+          </div>
+        </div>
+        <div class="transport-card">
+          <div class="transport-icon">🚂</div>
+          <h3>Kereta Api</h3>
+          <p>Nikmati perjalanan sambil melihat pemandangan alam yang indah</p>
+          <div class="transport-details">
+            <span>⏱️ 4-12 jam</span>
+            <span>💰 Rp 150K - 1M</span>
+          </div>
+        </div>
+        <div class="transport-card">
+          <div class="transport-icon">🚌</div>
+          <h3>Bus Jarak Jauh</h3>
+          <p>Pilihan ekonomis dengan rute mencakup seluruh nusantara</p>
+          <div class="transport-details">
+            <span>⏱️ 8-24 jam</span>
+            <span>💰 Rp 100K - 500K</span>
+          </div>
+        </div>
+        <div class="transport-card">
+          <div class="transport-icon">🚗</div>
+          <h3>Rental Mobil</h3>
+          <p>Kebebasan menjelajahi destinasi dengan kendaraan pribadi</p>
+          <div class="transport-details">
+            <span>🔧 Fleksibel</span>
+            <span>💰 Rp 300K - 800K/hari</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Travelista. Dibuat dengan ❤️ untuk para penjelajah dunia.</p>
+      <p>Hubungi Vela kapan saja untuk rekomendasi terbaik!</p>
+    </div>
+  </footer>
+
+  <!-- Floating Chatbot Icon -->
+  <button id="floatingChatBtn" class="floating-chat-btn" onclick="openChat()" title="Chat with Vela">
+    💬
+  </button>
+
+  <!-- Chatbot Modal -->
+  <div id="chatModal" class="chat-modal">
+    <div class="chat-container">
+      <div class="chat-header">
+        <h2>🌍 Vela</h2>
+        <div class="chat-header-actions">
+          <button class="maximize-btn" id="maximizeBtn" onclick="toggleMaximize()" title="Perbesar chat">
+            ⛶
+          </button>
+          <button class="close-btn" onclick="closeChat()" title="Tutup chat">&times;</button>
+        </div>
+      </div>
+      <div id="chatBox" class="chat-box"></div>
+      <form id="chatForm" class="chat-form">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Tanyakan tentang destinasi, akomodasi, atau transportasi..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="send-btn">Kirim</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
